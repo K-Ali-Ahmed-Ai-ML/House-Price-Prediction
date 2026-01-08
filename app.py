@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 app=Flask(__name__)
 
-model=pickle.load(open(r"training/model.pkl","rb"))   # Loading the model
+model=pickle.load(open(r"model.pkl","rb"))   # Loading the model
 
 @app.route('/')
 def home():
